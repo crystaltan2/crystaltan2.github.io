@@ -1,0 +1,81 @@
+#carousel, .journal-page {
+    width: 820px;
+    height: 450px;
+    left: 275px;
+    right: 100px;
+}
+
+#carousel {
+    position: relative;
+    overflow: hidden;
+   
+}
+#carousel-journal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    transition: 0.5s left;
+    margin: 0 auto;
+    left: 62.5px;
+}
+
+
+.journal-page {
+    width: 380px;
+    height: 450px;
+
+}
+
+.hidden {
+    visibility: hidden;
+  }
+
+#carousel-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#button-next,
+#button-previous {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}	
+
+#stickies {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    margin-left: 275px;
+    margin-right: 0px;
+}
+
+.stickers {
+    padding-right: 15px;
+}
+
+body, html {
+    height: 100%;
+}
+
+h1 {
+    padding: 15px;
+    color:#ffff;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+}
+
+.stickers:hover {
+    cursor: pointer;
+    opacity: 40%;
+
+}
